@@ -12,41 +12,71 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
 </head>
 <body>
- <section class="header">
-    <nav>
-        <a href="index.html"> <img src="images/logo.png" alt="is-this-logo"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">COURSE</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
+
+    <!------header------>
+
+    <section class="header">
+            <nav>
+                <a href="index.html"> <img src="images/logo.png" alt="is-this-logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>world's Biggest University</h1>
+                <p> Making website is now one the easiest thing in the world. You just need to learn HTML,CSS, <br> javascript and you are good to go.</p>
+                <a href="" class="hero-btn">Visit Us To Know More</a>
+            </div>
+    </section>
+ 
+ <!------course------>
+
+    <section class="course">
+        <h1>Courses We offer</h1>
+        <p>Loerm ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quam laboriosam ad quas quidem iste eaque voluptas molestias, perspiciatis voluptate dicta corporis esse totam aspernatur atque ab nihil numquam ipsa!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quam laboriosam ad quas quidem iste eaque voluptas molestias, perspiciatis voluptate dicta corporis esse totam aspernatur atque ab nihil numquam ipsa!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quam laboriosam ad quas quidem iste eaque voluptas molestias, perspiciatis voluptate dicta corporis esse totam aspernatur atque ab nihil numquam ipsa!</p>
+            </div>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
+    </section>
 
-<div class="text-box">
-    <h1>world's Biggest University</h1>
-    <p> Making website is now one the easiest thing in the world. You just need to learn HTML,CSS, <br> javascript and you are good to go.</p>
-    <a href="" class="hero-btn">Visit Us To Know More</a>
-    
-</div>
- </section>
- <script>
+<!------campus------>
 
-<!--javaScript for Toggle Menu-->
-    var navLinks = document.getElementById("navLinks");
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quo quam! Ducimus beatae voluptatum quia officia inventore vel culpa, voluptatibus sit dicta numquam consequuntur, aspernatur tempore totam iusto explicabo possimus?</p>
+    </section>
+ 
+ <!----javaScript for Toggle Menu-----> 
+    <script>
+        var navLinks = document.getElementById("navLinks");
 
-    function showMenu(){
-        navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-200px";
-    }
-
- </script>   
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>   
 </body>
 </html>
