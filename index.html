@@ -7,14 +7,16 @@
     <title>University website</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&family=Raleway:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&family=Raleway:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
 </head>
 <body>
  <section class="header">
     <nav>
         <a href="index.html"> <img src="images/logo.png" alt="is-this-logo"></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
@@ -23,7 +25,28 @@
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
- </section>   
+
+<div class="text-box">
+    <h1>world's Biggest University</h1>
+    <p> Making website is now one the easiest thing in the world. You just need to learn HTML,CSS, <br> javascript and you are good to go.</p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+    
+</div>
+ </section>
+ <script>
+
+<!--javaScript for Toggle Menu-->
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+
+ </script>   
 </body>
 </html>
